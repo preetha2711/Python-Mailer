@@ -4,7 +4,7 @@ import smtplib
 content = "python mailer test"
 receiver = 'reeju.datta@gmail.com'
 email = 'datta.preetha@gmail.com'
-password = 'vincentcrabbe'
+password = '' #insert password here
 
 
 
