@@ -1,14 +1,16 @@
 import smtplib
 
 #tester
-content = "python mailer test"
-receiver = 'reeju.datta@gmail.com'
-email = 'datta.preetha@gmail.com'
-password = '' #insert password here
+file = open("Biology.txt","r")
+for line in file:
+    content = line
+    receiver = 'malavika.murali_ug19@ashoka.edu.in'
+    email = 'legitashoka@gmail.com'
+    password = ''
 
 
 
-for i in range(0,10):
+
     mail = smtplib.SMTP('smtp.gmail.com', 587)
 
     mail.ehlo()
