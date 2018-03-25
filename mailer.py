@@ -1,12 +1,20 @@
 import smtplib
+import csv
 
+with open('trial.csv') as csvfile:
+    read = csv.reader(csvfile, delimiter = ',')
+    print (read)
+
+    for row in read:
+        print (row[1]), (row[2]), row[3]
+'''
 #tester
 file = open("Biology.txt","r")
 for line in file:
     content = line
-    receiver = 'malavika.murali_ug19@ashoka.edu.in'
-    email = 'legitashoka@gmail.com'
-    password = ''
+    receiver = 'tester_ug19@ashoka.edu.in'
+    email = 'ashokalegit@gmail.com'
+    password = 'revenge102'
 
 
 
@@ -19,5 +27,5 @@ for line in file:
     mail.login(email,password)
     fromemail = email
     mail.sendmail(fromemail,receiver,content)
-
     mail.close()
+'''
