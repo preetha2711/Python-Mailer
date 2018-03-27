@@ -1,13 +1,11 @@
 import smtplib
 import csv
 
-with open('trial.csv') as csvfile:
+with open('tester.csv') as csvfile:
     read = csv.reader(csvfile, delimiter = ',')
-    print (read)
-
     for row in read:
-        content = "Your user name is " + row[2] + ", and your password is " + row[3]
-        receiver = row[1]
+        content = "Hey!"+"\n"+ " Welcome to the Cryptic Hunt!  Your user name is " + row[1] + ", and your password is " + row[2] + "\n" + "Please feel free to message us on the CSGS Facebook page for queries!" + "\n" " The hunt can be accessed at : at precisely 22:00 aka 4 hours from now!" + "\n" + " Have fun and happy hunting!"+"\n"+ " Love Team WiCS and Team CSGS"
+        receiver = row[0]
         email = 'ashokalegit@gmail.com'
         password = 'revenge102'
         mail = smtplib.SMTP('smtp.gmail.com', 587)
